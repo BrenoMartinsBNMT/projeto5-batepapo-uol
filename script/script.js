@@ -58,7 +58,7 @@ function imprimir(ver) {
       if (ver.data[i].type === "private_message") {
         if (ver.data[i].to === condicionalInit) {
           console.log(ver.data[i].type);
-          mensagens.innerHTML += `<div class="messenger-line "><span id="time-messenger"
+          mensagens.innerHTML += `<div class="messenger-line " data-identifier="message"><span id="time-messenger"
               > ${ver.data[i].time}  </span> <span id="whoSend"
                 > ${ver.data[i].from}  </span> para <span id="Tosend"> ${ver.data[i].to}:</span> 
                 <span id="messenger-content"> ${ver.data[i].text}</span></div>`;
@@ -68,7 +68,7 @@ function imprimir(ver) {
   } else {
     for (let i = 0; i < 100; i++) {
       if (ver.data[i].to === "Todos") {
-        mensagens.innerHTML += `<div class="messenger-line "><span id="time-messenger"
+        mensagens.innerHTML += `<div class="messenger-line " data-identifier="message"><span id="time-messenger"
               > ${ver.data[i].time}  </span> <span id="whoSend"
                 > ${ver.data[i].from}  </span> para <span id="Tosend"> ${ver.data[i].to}:</span> 
                 <span id="messenger-content"> ${ver.data[i].text}</span></div>`;
@@ -76,7 +76,7 @@ function imprimir(ver) {
       if (ver.data[i].type === "private_message") {
         if (ver.data[i].to === condicionalInit) {
           console.log(ver.data[i].type);
-          mensagens.innerHTML += `<div class="messenger-line "><span id="time-messenger"
+          mensagens.innerHTML += `<div class="messenger-line " data-identifier="message"><span id="time-messenger"
               > ${ver.data[i].time}  </span> <span id="whoSend"
                 > ${ver.data[i].from}  </span> para <span id="Tosend"> ${ver.data[i].to}:</span> 
                 <span id="messenger-content"> ${ver.data[i].text}</span></div>`;
